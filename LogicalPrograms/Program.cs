@@ -6,7 +6,7 @@
         {
             Console.WriteLine("\t\tWelcome To Logical Programs\n");
             Console.WriteLine("\tChoose the program from the below option");
-            Console.WriteLine("1] Factorial Numbers. \n2] PerfectNumber");
+            Console.WriteLine("1] Factorial Numbers. \n2] PerfectNumber \n3] PrimeNumber");
             int option = int.Parse(Console.ReadLine());
             switch (option)
             {
@@ -18,6 +18,10 @@
 
                 case 2:
                     PerfectNumber.CheckPerfectNumber();
+                    break;
+                case 3:
+                    PrimeNumber prime =  new PrimeNumber();
+                    prime.ToCheckPrime();
                     break;
 
                 default:
