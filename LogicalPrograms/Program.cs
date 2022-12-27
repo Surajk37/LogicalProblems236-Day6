@@ -6,7 +6,7 @@
         {
             Console.WriteLine("\t\tWelcome To Logical Programs\n");
             Console.WriteLine("\tChoose the program from the below option");
-            Console.WriteLine("1] Factorial Numbers. \n2] PerfectNumber \n3] PrimeNumber \n4] Reverse A Number");
+            Console.WriteLine("1] Factorial Numbers. \n2] PerfectNumber \n3] PrimeNumber \n4] Reverse A Number \n5] Coupon Numbers");
             int option = int.Parse(Console.ReadLine());
             switch (option)
             {
@@ -30,6 +30,11 @@
                     int n = Convert.ToInt32(Console.ReadLine());
                     ReverseANumber reverseA = new ReverseANumber();
                     reverseA.ToReverse(n);
+                    break;
+
+                case 5:
+                    CouponNumber coupon = new CouponNumber();
+                    coupon.DisplayCoupon();
                     break;
                
                 default:
