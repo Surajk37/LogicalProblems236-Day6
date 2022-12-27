@@ -6,7 +6,7 @@
         {
             Console.WriteLine("\t\tWelcome To Logical Programs\n");
             Console.WriteLine("\tChoose the program from the below option");
-            Console.WriteLine("1] Factorial Numbers. \n2] PerfectNumber \n3] PrimeNumber \n4] Reverse A Number ");
+            Console.WriteLine("1] Factorial Numbers. \n2] PerfectNumber \n3] PrimeNumber \n4] Reverse A Number");
             int option = int.Parse(Console.ReadLine());
             switch (option)
             {
@@ -26,12 +26,12 @@
                     break;
 
                 case 4:
-                    Console.WriteLine("\nEnter a Number To Reverse");
+                    Console.WriteLine("\nEnter Number To Reverse It");
                     int n = Convert.ToInt32(Console.ReadLine());
                     ReverseANumber reverseA = new ReverseANumber();
                     reverseA.ToReverse(n);
                     break;
-
+               
                 default:
                     Console.WriteLine("Please enter Valid Option");
                     break;

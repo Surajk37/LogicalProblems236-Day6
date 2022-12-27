@@ -10,15 +10,15 @@ namespace LogicalPrograms
     {
         public void ToReverse(int n)
         {
-            int reminder,reverse = 0;
+            int reminder, reverse = 0;
 
-            while(n > 0)
+            while (n > 0)
             {
                 reminder = n % 10;
                 reverse = (reverse * 10) + reminder;
                 n = n / 10;
             }
-              Console.WriteLine(reverse+  " Is Reversed Number");
+            Console.WriteLine(reverse + " Is Reversed Number");
         }
     }
 }
