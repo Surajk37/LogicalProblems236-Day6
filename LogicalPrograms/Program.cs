@@ -7,6 +7,7 @@
             Console.WriteLine("\t\tWelcome To Logical Programs\n");
             Console.WriteLine("\tChoose the program from the below option");
             Console.WriteLine("1] Factorial Numbers. \n2] PerfectNumber \n3] PrimeNumber \n4] Reverse A Number \n5] Coupon Numbers");
+            Console.WriteLine("6] Stimulate Stop Watch");
             int option = int.Parse(Console.ReadLine());
             switch (option)
             {
@@ -35,6 +36,10 @@
                 case 5:
                     CouponNumber coupon = new CouponNumber();
                     coupon.DisplayCoupon();
+                    break;
+
+                case 6:
+                    StimulateStopWatch.GetElapsedTime();
                     break;
                
                 default:
