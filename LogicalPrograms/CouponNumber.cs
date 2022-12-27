@@ -27,7 +27,7 @@ namespace LogicalPrograms
                 }
             }
             Console.WriteLine("Total random number needed to have all distinct coupons : " + count);
-            return distinct;
+            return 0;
         }
     }
 }
