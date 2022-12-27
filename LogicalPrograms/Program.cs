@@ -7,7 +7,7 @@
             Console.WriteLine("\t\tWelcome To Logical Programs\n");
             Console.WriteLine("\tChoose the program from the below option");
             Console.WriteLine("1] Factorial Numbers. \n2] PerfectNumber \n3] PrimeNumber \n4] Reverse A Number \n5] Coupon Numbers");
-            Console.WriteLine("6] Stimulate Stop Watch \n7] Notes Vending Machine");
+            Console.WriteLine("6] Stimulate Stop Watch \n7] Notes Vending Machine \n8] DayOfWeek");
             int option = int.Parse(Console.ReadLine());
             switch (option)
             {
@@ -44,6 +44,10 @@
 
                 case 7:
                     NotesVendingMachine.GetNotes();
+                    break;
+
+                case 8:
+                    DayofWeek.FindDayOfWeek();
                     break;
 
                 default:
