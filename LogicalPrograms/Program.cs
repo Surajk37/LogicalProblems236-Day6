@@ -7,7 +7,7 @@
             Console.WriteLine("\t\tWelcome To Logical Programs\n");
             Console.WriteLine("\tChoose the program from the below option");
             Console.WriteLine("1] Factorial Numbers. \n2] PerfectNumber \n3] PrimeNumber \n4] Reverse A Number \n5] Coupon Numbers");
-            Console.WriteLine("6] Stimulate Stop Watch");
+            Console.WriteLine("6] Stimulate Stop Watch \n7] Notes Vending Machine");
             int option = int.Parse(Console.ReadLine());
             switch (option)
             {
@@ -41,7 +41,11 @@
                 case 6:
                     StimulateStopWatch.GetElapsedTime();
                     break;
-               
+
+                case 7:
+                    NotesVendingMachine.GetNotes();
+                    break;
+
                 default:
                     Console.WriteLine("Please enter Valid Option");
                     break;
