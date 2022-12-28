@@ -7,7 +7,7 @@
             Console.WriteLine("\t\tWelcome To Logical Programs\n");
             Console.WriteLine("\tChoose the program from the below option");
             Console.WriteLine("1] Factorial Numbers. \n2] PerfectNumber \n3] PrimeNumber \n4] Reverse A Number \n5] Coupon Numbers");
-            Console.WriteLine("6] Stimulate Stop Watch \n7] Notes Vending Machine \n8] DayOfWeek \n9] Temperature Conversion \n10] Monthly Payment");
+            Console.WriteLine("6] Stimulate Stop Watch \n7] Notes Vending Machine \n8] DayOfWeek \n9] Temperature Conversion \n10] Monthly Payment \n11] Square Root");
             int option = int.Parse(Console.ReadLine());
             switch (option)
             {
@@ -56,6 +56,13 @@
 
                 case 10:
                     MonthlyPayment.GetMonthlyPayment();
+                    break;
+
+                case 11:
+                    Console.WriteLine("Enter a non negative number: ");
+                    double c = Convert.ToDouble(Console.ReadLine());
+                    double answer = SquareRoot.GetSqrtOfNonNegativeNum(c);
+                    Console.WriteLine(answer);
                     break;
 
                 default:
